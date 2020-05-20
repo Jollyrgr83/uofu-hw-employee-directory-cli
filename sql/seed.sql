@@ -33,7 +33,7 @@ VALUES
 (11, "Assistant Attorney General", 10000, 5), 
 (12, "United States Attorney", 5000, 5);
 
-INSERT INTO department (id, name)
+INSERT INTO department (id, department)
 VALUES 
 (1, "Executive"), 
 (2, "State"), 
