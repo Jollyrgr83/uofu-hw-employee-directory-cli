@@ -1,22 +1,22 @@
 
 USE company_db;
 
-INSERT INTO employee (id, first_name, last_name, role_id) VALUES 
-(1, "George", "Washington", 1);
+INSERT INTO employee (id, first_name, last_name, role_id, manager_status) VALUES 
+(1, "George", "Washington", 1, TRUE);
 
-INSERT INTO employee (id, first_name, last_name, role_id, manager_id) VALUES 
-(2, "John", "Adams", 2, 1), 
-(3, "John", "Jay", 3, 1), 
-(4, "Alexander", "Hamilton", 4, 1), 
-(5, "Henry", "Knox", 5, 1), 
-(6, "Edmund", "Randolph", 6, 1), 
-(7, "Thomas", "Jefferson", 7, 3),
-(8, "Timothy", "Pickering", 8, 7), 
-(9, "Benjamin", "Franklin", 8, 7), 
-(10, "Oliver", "Wolcott, Jr", 9, 4), 
-(11, "James", "McHenry", 10, 5), 
-(12, "William", "Bradford", 11, 6), 
-(13, "Charles", "Lee", 12, 6);
+INSERT INTO employee (id, first_name, last_name, role_id, manager_id, manager_status) VALUES 
+(2, "John", "Adams", 2, 1, FALSE), 
+(3, "John", "Jay", 3, 1, TRUE), 
+(4, "Alexander", "Hamilton", 4, 1, TRUE), 
+(5, "Henry", "Knox", 5, 1, TRUE), 
+(6, "Edmund", "Randolph", 6, 1, TRUE), 
+(7, "Thomas", "Jefferson", 7, 3, TRUE),
+(8, "Timothy", "Pickering", 8, 7, FALSE), 
+(9, "Benjamin", "Franklin", 8, 7, FALSE), 
+(10, "Oliver", "Wolcott, Jr", 9, 4, FALSE), 
+(11, "James", "McHenry", 10, 5, FALSE), 
+(12, "William", "Bradford", 11, 6, FALSE), 
+(13, "Charles", "Lee", 12, 6, FALSE);
 
 INSERT INTO role (id, title, salary, department_id)
 VALUES 
