@@ -18,12 +18,12 @@ function initMenu() {
             });
         }
         else if (data.addMenu) {
-            Menu.updateMenuHandler(data.addMenu).then(function(data) {
+            Menu.addMenuHandler(data.addMenu).then(function(data) {
                 continuePrompt();
             });
         }
         else if (data.removeMenu) {
-            Menu.updateMenuHandler(data.removeMenu).then(function(data) {
+            Menu.removeMenuHandler(data.removeMenu).then(function(data) {
                 continuePrompt();
             });
         }
