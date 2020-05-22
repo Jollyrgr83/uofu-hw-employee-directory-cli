@@ -1,5 +1,4 @@
 const inquirer = require("inquirer");
-const cTable = require("console.table");
 
 const q = require("./lib/questions");
 const Menu = require("./lib/menuObject");
