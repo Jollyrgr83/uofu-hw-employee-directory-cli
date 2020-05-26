@@ -26,6 +26,9 @@ function initMenu() {
                 continuePrompt();
             });
         }
+        else {
+            return;
+        }
     });
 }
 
@@ -36,8 +39,11 @@ function continuePrompt() {
         }
         else {
             console.log("Have a good day!");
+            process.exit();
         }
     });
 }
+
+console.log("Welcome to the employee tracker. Please use the following menus to view and edit information about employees, roles, and departments.");
 
 initMenu();
